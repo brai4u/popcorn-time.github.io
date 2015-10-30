@@ -69,18 +69,6 @@
 	<meta property="og:url" content="http://getpopcornti.me" />
 	<meta property="og:site_name" content="Popcorn Time" />
 
-	<script type="text/javascript">
-	// Redirect the user to the correct language
-	// TODO: Remember the preferred language
-	var language = (navigator.language || navigator.userLanguage).toLowerCase().slice(0,2); 
-	var supportedLanguages = ['es'];
-	if( language != 'en' ) {
-		for( i in supportedLanguages ) {
-			if( supportedLanguages[i] === language ){ window.location.replace("/"+language); break; }
-		}
-	}
-	</script>
-
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
